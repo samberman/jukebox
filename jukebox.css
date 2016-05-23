@@ -1,0 +1,41 @@
+* {
+}
+
+h1 {
+	text-align: center;
+}
+
+body {
+	background-color: #80a7fc;
+	margin: 0 auto;
+	background-image: url("https://openclipart.org/image/2400px/svg_to_png/201840/Jukebox.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.controls {
+	background-color: yellow;
+	width: 10%
+	padding-left: 60px;
+}
+
+#add_song {
+	width: 20%;
+	margin: 0 auto;
+	position: relative;
+	top: 320px;
+	text-align: center;
+}
+
+h4 {
+	color: white;
+}
+
+.right {
+	text-align: right;
+	color: white;
+}
+
+#choose {
+	background-color: yellow;
+}

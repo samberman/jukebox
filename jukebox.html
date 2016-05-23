@@ -1,18 +1,58 @@
 <html>
 <head>
 	<title>My Jukebox</title>
-	<link rel="stylesheet" type="text/css" href="/div_and_conquer/normalize.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/div_and_conquer/normalize.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="jukebox.css">
-	<script src="/div_and_conquer/jquery-2.2.3.js"></script>
-	<script src="jukebox.js"></script>
+	
 </head>
 <body>
-		<h1>KICK OUT THE JAMS</h1>
-		<div id="juke">
-				<ul>
-					<li></li>
-					<li></li>
-				</ul>
+		<!-- <div class="row">
+		</div> -->
+		<!-- <div class="row"> -->
+			
+		<!-- </div> -->
+		<div id="add_song">
+				<h1>KICK OUT THE JAMS</h1>
+			<!-- <div class="row"> -->
+				<audio id="song" src="" type="audio/mpeg">
+				</audio>
+				<button id="playSong" class="glyphicon glyphicon-play controls" onclick="jukebox.play()"></button>
+				<button id="pauseSong" class="glyphicon glyphicon-pause controls"  onclick="jukebox.pause()"></button>
+				<button id="nextSong" class="glyphicon glyphicon-forward controls" onclick="jukebox.next()"></button>
+			<!-- </div> -->
+			<h4>Rock out with your bad self!</h4>
+		
+		<div class="row">
+			<div class="col-md-4 right">
+				<label type="text">name</label>
+			</div>
+			<div class="col-md-6">
+				<input type="text" id="name"><br>
+			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-4 right">
+			<label type="text">artist</label>
+		</div>
+			<div class="col-md-6">
+				<input type="text" id="artist"><br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 right">
+				<label type="text">url</label>
+			</div>
+			<div class="col-md-6">
+				<input type="text" id="url"><br>
+			</div>
+			<button id="choose" onclick="jukebox.addSong()">add song</button>
+		</div>
+		</div>
+
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+						<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+						<script src="jukebox.js"></script>
+		
 </body>
 </html>
